@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Feedback Form</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- the entire body must be written by student -->
+  <form action="/submit" method="POST">
+    <h1>Feedback Form</h1>
 
-	<form action="/submit" method="post">
-		<h1>Feedback Form</h1>
+ 
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+    <br><br>
 
-		<label for="name">Name</label>
-		<input type="text" id="name" minlength="3" maxlength="50" required>
-		<br>
-		<br>
+    
+    <label for="portfolio">Portfolio:</label>
+    <input type="url" id="portfolio" name="portfolio" required>
+    <br><br>
 
-		<label for="portfolio">Portfolio</label>
-		<input id="portfolio" type="url" required>
-		<br>
-		<br>
+   
+    <label for="favColor">Favorite Color:</label>
+    <input type="color" id="favColor" name="favColor">
+    <br><br>
 
-		<label for="FavColor">Favorite Color</label>
-		<input id="FavColor" type="color">
-		<br>
-		<br>
+    <!-- Likeness -->
+    <label for="likeness">Likeness:</label>
+    <input  type="range" id="likeness" name="likeness" min="1" max="100">
+    <br><br>
 
-		<label for="likeness">Likeness</label>
-		<input id="likeness" type="range" min="1" max="100">
-		<br>
-		<br>
-		
-		 <input type="submit" value="Submit Feedback">
-	</form>
+    
+    <input type="submit" value="Submit Feedback">
+  </form>
 
-	
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
